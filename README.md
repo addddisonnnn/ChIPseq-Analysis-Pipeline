@@ -73,8 +73,47 @@ chipseq-runx1-analysis/
 | INPUT_rep2 | ~10.7 | 74.3% | 1-4% | 43-47% |
 | IP_rep1 | ~30 | 89.1% | 12-13% | 43-47% |
 | IP_rep2 | ~29 | 74.3% | 12-13% | 43-47% |
+### RUNX1 Binding Characteristics
+- Promoter enrichment: Strong binding at transcription start sites
+- Motif validation: Canonical RUNX motif highly enriched (p < 1e-50)
+- Target genes: Direct regulation of 14.7-18.7% of differentially expressed genes
+### Functional Enrichment
+**Top Pathways Regulated by RUNX1:**
+- E2F Targets & Cell Cycle Control
+- DNA Damage Response & Repair
+- Metabolic Reprogramming (Glycolysis, TCA Cycle)
+- Estrogen Response Pathways
+- mTORC1 Signaling
+### Visualizations
+The pipeline generates comprehensive visualizations including:
+- Signal coverage profiles across gene bodies
+- Correlation heatmaps between replicates
+- Motif enrichment plots
+- Genome browser tracks for specific loci
+- Pathway enrichment bar graphs
+### Configuration
+**Profiles**
+- singularity: Uses Singularity containers for reproducibility
+- docker: Uses Docker containers
+- local: Local execution with Conda/Mamba
+**Parameters**
+Key customizable parameters in nextflow.config:
+- genome: Reference genome path
+- blacklist: ENCODE blacklist regions
+- gtf: Gene annotation file
+- ucsc_genes: Gene coordinates for profiling
 
-
-**QC Assessment**: All samples showed high-quality sequencing data with Q30+ base quality scores, minimal adapter contamination, and appropriate GC content. Higher duplication rates in IP samples are expected due to enrichment.
 ## Citation
 Barutcu, A. R., Hong, D., Lajoie, B. R., McCord, R. P., van Wijnen, A. J., Lian, J. B., Stein, J. L., Dekker, J., Imbalzano, A. N., & Stein, G. S. (2016). RUNX1 contributes to higher-order chromatin organization and gene regulation in breast cancer cells. Biochimica et biophysica acta, 1859(11), 1389–1397. https://doi.org/10.1016/j.bbagrm.2016.08.003
+```bibtex
+@article{barutcu2016,
+  title={RUNX1 contributes to higher-order chromatin organization and gene regulation in breast cancer cells},
+  author={Barutcu, A Rasim and Hong, Deli and Lajoie, Bryan R and McCord, Rachel P and van Wijnen, Andre J and Lian, Jane B and Stein, Janet L and Dekker, Job and Imbalzano, Anthony N and Stein, Gary S},
+  journal={Biochimica et Biophysica Acta (BBA)-Gene Regulatory Mechanisms},
+  volume={1859},
+  number={12},
+  pages={1389--1397},
+  year={2016},
+  publisher={Elsevier}
+}
+```
