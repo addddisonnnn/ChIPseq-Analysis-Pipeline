@@ -1,0 +1,5 @@
+	'IP_rep1.bw'	'IP_rep2.bw'	'INPUT_rep2.bw'	'INPUT_rep1.bw'
+'IP_rep1.bw'	1.0000	0.5737	0.4448	0.5368
+'IP_rep2.bw'	0.5737	1.0000	0.5513	0.6809
+'INPUT_rep2.bw'	0.4448	0.5513	1.0000	0.8417
+'INPUT_rep1.bw'	0.5368	0.6809	0.8417	1.0000
