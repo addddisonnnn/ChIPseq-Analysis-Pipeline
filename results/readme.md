@@ -34,7 +34,7 @@
 ### Functional Enrichment Analysis
 
 #### Hallmark Pathways (MSigDB)
-![Hallmark Pathways](results/MSigDB_Hallmark_2020_bar_graph.png)
+![Hallmark Pathways](MSigDB_Hallmark_2020_bar_graph.png)
 
 **Top Enriched Pathways**:
 1. **E2F Targets** - Cell cycle regulation
@@ -44,7 +44,7 @@
 5. **DNA Repair** - Genomic stability
 
 #### Biological Processes (GO)
-![Biological Processes](results/GO_Biological_Process_2025_bar_graph.png)
+![Biological Processes](GO_Biological_Process_2025_bar_graph.png)
 
 **Key Processes**:
 - Cell cycle phase transition
@@ -54,7 +54,7 @@
 - Regulation of transcription
 
 #### KEGG Pathways
-![KEGG Pathways](results/KEGG_2021_Human_bar_graph.png)
+![KEGG Pathways](KEGG_2021_Human_bar_graph.png)
 
 **Signaling Networks**:
 - Cell cycle
@@ -68,7 +68,7 @@
 - **Sample clustering**: Clear separation between INPUT and IP conditions
 
 ### Signal Profile Characteristics
-![Signal Profile](results/profile_plot.png)
+![Signal Profile](profile_plot.png)
 
 - **TSS enrichment**: Characteristic peak immediately upstream of transcription start sites
 - **Gene body signal**: Consistent binding pattern across both replicates
