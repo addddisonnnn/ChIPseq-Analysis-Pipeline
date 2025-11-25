@@ -1,6 +1,24 @@
-# ChIP-seq Analysis of RUNX1 Binding in MCF-7 Breast Cancer Cells
+# # ChIP-seq Analysis Pipeline
+ChIP-seq Analysis of RUNX1 Binding in MCF-7 Breast Cancer Cells
 
 ## Introduction
-
 Chromatin Immunoprecipitation followed by sequencing (ChIP-seq) is a powerful technique used to identify genome-wide binding sites for transcription factors and other DNA-associated proteins. This study focuses on re-analyzing ChIP-seq data from Barutcu et al. (2016) [1], who investigated RUNX1's role in breast cancer cells. RUNX1 (Runt-related transcription factor 1), while traditionally known for its essential functions in hematopoiesis, has emerged as an important player in breast cancer pathogenesis. The original study aimed to understand how RUNX1 contributes to higher-order chromatin organization and gene regulation in breast cancer cells, particularly examining its role in long-range chromatin interactions and spatial genome architecture. The authors employed ChIP-seq to map RUNX1 binding sites genome-wide and integrated these findings with Hi-C data to explore RUNX1's involvement in chromatin looping and domain organization. The bioinformatic techniques employed including quality control, peak calling, motif discovery, and integration with chromatin architecture data, enable comprehensive characterization of transcription factor binding landscapes and their structural consequences in cancer cells.
+
+## Methods
+
+## References
+1. Barutcu, A. R., Hong, D., Lajoie, B. R., McCord, R. P., van Wijnen, A. J., Lian, J. B., Stein, J. L., Dekker, J., Imbalzano, A. N., & Stein, G. S. (2016). RUNX1 contributes to higher-order chromatin organization and gene regulation in breast cancer cells. Biochimica et biophysica acta, 1859(11), 1389–1397. https://doi.org/10.1016/j.bbagrm.2016.08.003
+2. Heinz, S., Benner, C., Spann, N., Bertolino, E., Lin, Y. C., Laslo, P., Cheng, J. X., Murre, C., Singh, H., & Glass, C. K. (2010). Simple combinations of lineage-determining transcription factors prime cis-regulatory elements required for macrophage and B cell identities. Molecular Cell, 38(4), 576–589. https://doi.org/10.1016/j.molcel.2010.05.004
+3. Bailey, T. L., Boden, M., Buske, F. A., Frith, M., Grant, C. E., Clementi, L., Ren, J., Li, W. W., & Noble, W. S. (2009). MEME SUITE: tools for motif discovery and searching. Nucleic Acids Research, 37(suppl_2), W202–W208. https://doi.org/10.1093/nar/gkp335
+4. Ramírez, F., Dündar, F., Diehl, S., Grüning, B. A., & Manke, T. (2014). deepTools: a flexible platform for exploring deep-sequencing data. Nucleic Acids Research, 42(W1), W187–W191. https://doi.org/10.1093/nar/gku365
+5. Quinlan, A. R., & Hall, I. M. (2010). BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics, 26(6), 841–842. https://doi.org/10.1093/bioinformatics/btq033
+6. Li, H., Handsaker, B., Wysoker, A., Fennell, T., Ruan, J., Homer, N., Marth, G., Abecasis, G., Durbin, R., & 1000 Genome Project Data Processing Subgroup. (2009). The Sequence Alignment/Map format and SAMtools. Bioinformatics, 25(16), 2078–2079. https://doi.org/10.1093/bioinformatics/btp352
+7. Langmead, B., & Salzberg, S. L. (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods, 9(4), 357–359. https://doi.org/10.1038/nmeth.1923
+8. McLean, C. Y., Bristor, D., Hiller, M., Clarke, S. L., Schaar, B. T., Lowe, C. B., Wenger, A. M., & Bejerano, G. (2010). GREAT improves functional interpretation of cis-regulatory regions. Nature Biotechnology, 28(5), 495–501. https://doi.org/10.1038/nbt.1630
+9. Zhang, Y., Liu, T., Meyer, C. A., Eeckhoute, J., Johnson, D. S., Bernstein, B. E., Nusbaum, C., Myers, R. M., Brown, M., Li, W., & Liu, X. S. (2008). Model-based analysis of ChIP-Seq (MACS). Genome Biology, 9(9), R137. https://doi.org/10.1186/gb-2008-9-9-r137
+10. Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics, 30(15), 2114–2120. https://doi.org/10.1093/bioinformatics/btu170
+11. Ewels, P., Magnusson, M., Lundin, S., & Käller, M. (2016). MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047–3048. https://doi.org/10.1093/bioinformatics/btw354
+12. Amemiya, H. M., Kundaje, A., & Boyle, A. P. (2019). The ENCODE Blacklist: Identification of Problematic Regions of the Genome. Scientific Reports, 9(1), 9354. https://doi.org/10.1038/s41598-019-45839-z
+13. Kuleshov, M. V., Jones, M. R., Rouillard, A. D., Fernandez, N. F., Duan, Q., Wang, Z., Koplev, S., Jenkins, S. L., Jagodnik, K. M., Lachmann, A., McDermott, M. G., Monteiro, C. D., Gundersen, G. W., & Ma'ayan, A. (2016). Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Research, 44(W1), W90–W97. https://doi.org/10.1093/nar/gkw377
+14. Robinson, J. T., Thorvaldsdóttir, H., Winckler, W., Guttman, M., Lander, E. S., Getz, G., & Mesirov, J. P. (2011). Integrative genomics viewer. Nature Biotechnology, 29(1), 24–26. https://doi.org/10.1038/nbt.1754
 
