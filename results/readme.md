@@ -1,3 +1,35 @@
+
+### Results File Descriptions
+
+**Primary Analysis Outputs:**
+- `IP_rep1_peaks.bed` / `IP_rep2_peaks.bed` - Raw peak calls from each biological replicate
+- `correlation_matrix.tab` - Quantitative correlation values between samples
+- `genes_for_enrichr.txt` - RUNX1 target genes for functional analysis
+
+**Quality Control Visualizations:**
+- `supp_figure_S2A_table.png` - Alignment metrics comparison with original study
+- `supp_figure_S2B_summary.png` - Technical QC metrics overview
+- `supp_figure_S2C_venn.png` - Peak overlap analysis showing replicate consistency
+- `correlation_heatmap.png` - Sample similarity matrix visualization
+
+**Genomic Evidence:**
+- `figure_2D_MALAT1.png` - RUNX1 binding at MALAT1 promoter (direct target)
+- `figure_2E_PIDD1.png` - RUNX1 binding at PIDD1 promoter (direct target)  
+- `profile_plot.png` - Average signal profile across all gene bodies
+
+**Binding Specificity:**
+- `known_homer_motif.png` - Motif enrichment results validating RUNX1 specificity
+
+**Multi-omics Integration:**
+- `figure_2F_accurate.png` - Integration of ChIP-seq peaks with differential expression
+- `GSE75070_..._foldchange.txt` - Original RNA-seq data for correlation analysis
+
+**Functional Insights:**
+- `MSigDB_Hallmark_2020_bar_graph.png` - Cancer hallmark pathway enrichment
+- `GO_Biological_Process_2025_bar_graph.png` - Biological process terms
+- `KEGG_2021_Human_bar_graph.png` - KEGG signaling pathway enrichment
+- `enrichment_top_pathways_figure.png` - Summary of key regulated pathways
+
 ## Key Results
 
 ### Quality Control Metrics
