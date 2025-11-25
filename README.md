@@ -16,7 +16,7 @@ This project implements a reproducible Nextflow pipeline for ChIP-seq analysis, 
 ## Prerequisites
 - Nextflow >= 22.10.0
 - Singularity/Apptainer or Docker
-- Java 8 or higher
+- Python 3.9 or higher
 
 ## Installation
 ```bash
