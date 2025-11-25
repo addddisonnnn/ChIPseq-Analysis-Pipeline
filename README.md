@@ -34,11 +34,26 @@ nextflow run main.nf -profile singularity --samplesheet samplesheet.csv
 chipseq-runx1-analysis/
 ├── main.nf                          # Main Nextflow pipeline
 ├── modules/                         # Custom Nextflow modules
-│   ├── fastqc/
-│   ├── trimmomatic/
+│   ├── bedtools_intersect/
+│   ├── bedtools_remove/
 │   ├── bowtie2_align/
+│   ├── bowtie2_build/
+│   ├── deeptools_bamcoverage/
+│   ├── deeptools_computematrix/
+│   ├── deeptools_multibwsummary/
+│   ├── deeptools_plotcorrelation/
+│   ├── deeptools_plotprofile/
+│   ├── fastqc/
+│   ├── homer_annotatepeaks/
+│   ├── homer_findmotifsgenome/
 │   ├── homer_findpeaks/
-│   └── ...
+│   ├── homer_maketagdir/
+│   ├── homer_pos2bed/
+│   ├── multiqc/
+│   ├── samtools_flagstat/
+│   ├── samtools_index/
+│   ├── samtools_sort/
+│   ├── trimmomatic/
 ├── results/                         # Analysis outputs
 │   ├── MultiQC_Report.pdf          # Comprehensive QC report
 │   ├── profile_plot.png            # Signal coverage across genes
