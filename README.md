@@ -55,11 +55,30 @@ chipseq-runx1-analysis/
 │   ├── samtools_sort/
 │   ├── trimmomatic/
 ├── results/                         # Analysis outputs
-│   ├── MultiQC_Report.pdf          # Comprehensive QC report
-│   ├── profile_plot.png            # Signal coverage across genes
-│   ├── known_homer_motif.png       # Motif enrichment results
-│   ├── figure_2F_accurate.png      # Integration with expression data
-│   └── ...
+│   ├── ### RAW DATA & INTERMEDIATE FILES ###
+│   ├── GSE75070_MCF7_shRUNX1_shNS_RNAseq_log2_foldchange.txt # Gene expression data
+│   ├── IP_rep1_peaks.bed # Peak calls from replicate 1
+│   ├── IP_rep2_peaks.bed # Peak calls from replicate 2
+│   ├── genes_for_enrichr.txt # Gene list for enrichment analysis
+│   ├── correlation_matrix.tab # Sample correlation data
+│   ├── ### QUALITY CONTROL & VALIDATION ###
+│   ├── supp_figure_S2A_table.png # Alignment statistics comparison
+│   ├── supp_figure_S2B_summary.png # QC metrics summary
+│   ├── supp_figure_S2C_venn.png # Peak overlap between replicates
+│   ├── correlation_heatmap.png # Sample correlation visualization
+│   ├── ### GENOMIC VISUALIZATIONS ###
+│   ├── figure_2D_MALAT1.png # Genome browser view - MALAT1 promoter
+│   ├── figure_2E_PIDD1.png # Genome browser view - PIDD1 promoter
+│   ├── profile_plot.png # Signal coverage across gene bodies
+│   ├── ### MOTIF & BINDING ANALYSIS ###
+│   ├── known_homer_motif.png # Top enriched motifs from HOMER
+│   ├── ### EXPRESSION INTEGRATION ###
+│   ├── figure_2F_accurate.png # ChIP-seq + RNA-seq integration plot
+│   ├── ### FUNCTIONAL ENRICHMENT ###
+│   ├── MSigDB_Hallmark_2020_bar_graph.png # Cancer hallmark pathways
+│   ├── GO_Biological_Process_2025_bar_graph.png # Gene ontology terms
+│   ├── KEGG_2021_Human_bar_graph.png # KEGG pathway enrichment
+│   └── enrichment_top_pathways_figure.png # Comprehensive pathway summary
 ├── config/                         # Configuration files
 └── docs/                          # Documentation
 ```
