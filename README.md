@@ -28,11 +28,12 @@ cd chipseq-runx1-analysis
 ```bash
 nextflow run main.nf -profile singularity --samplesheet samplesheet.csv
 ```
-## Project Strucutre
+## Project Structure
 
 ``` text
 chipseq-runx1-analysis/
-├── main.nf                          # Main Nextflow pipeline
+├── envs                             # Conda environments
+│   └── base_env.yml # Environment specification
 ├── modules/                         # Custom Nextflow modules
 │   ├── bedtools_intersect/
 │   ├── bedtools_remove/
@@ -53,7 +54,7 @@ chipseq-runx1-analysis/
 │   ├── samtools_flagstat/
 │   ├── samtools_index/
 │   ├── samtools_sort/
-│   ├── trimmomatic/
+│   └── trimmomatic/
 ├── results/                         # Analysis outputs
 │   ├── ### RAW DATA & INTERMEDIATE FILES ###
 │   ├── GSE75070_MCF7_shRUNX1_shNS_RNAseq_log2_foldchange.txt # Gene expression data
@@ -79,8 +80,17 @@ chipseq-runx1-analysis/
 │   ├── GO_Biological_Process_2025_bar_graph.png # Gene ontology terms
 │   ├── KEGG_2021_Human_bar_graph.png # KEGG pathway enrichment
 │   └── enrichment_top_pathways_figure.png # Comprehensive pathway summary
-├── config/                         # Configuration files
-└── docs/                          # Documentation
+├── scripts/
+│   ├── AlignmentStatistics.py
+│   ├── AnnotatePeaksAnalysis.py
+│   ├── DisplayENRICHRresults.py
+│   ├── OverlapChIPvsRNA.py 
+│   ├── PeakOverlap.py 
+│   ├── PeaksStatistics.py 
+│   └── SpearmanCorrelation.py
+└── workflows/
+│   ├── main.nf           # Main Nextflow pipeline
+│   └── nextflow.config   # Nextflow configuration
 ```
 ## Analysis Workflow
 1. Quality Control & Preprocessing
