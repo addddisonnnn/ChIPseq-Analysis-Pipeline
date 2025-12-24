@@ -1,0 +1,5 @@
+name,path
+INPUT_rep1,/projectnb/bf528/materials/project-3-chipseq/full_files/INPUT_rep1.fastq.gz
+INPUT_rep2,/projectnb/bf528/materials/project-3-chipseq/full_files/INPUT_rep2.fastq.gz
+IP_rep1,/projectnb/bf528/materials/project-3-chipseq/full_files/IP_rep1.fastq.gz
+IP_rep2,/projectnb/bf528/materials/project-3-chipseq/full_files/IP_rep2.fastq.gz
